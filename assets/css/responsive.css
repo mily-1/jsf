@@ -1,0 +1,232 @@
+/*Kích thước cho Smart phone nhỏ*/
+@media screen and (min-width: 240px) {
+  html,
+  body {
+    font-size: 55%;
+  }
+
+  .header-small {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.2s linear;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px solid rgba(0, 0, 0, 0.2);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header-small.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header-small .header-link {
+    font-size: 2rem;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: var(--light-color);
+  }
+
+  .header-link.active,
+  .header-link:hover {
+    color: var(--white-color);
+    background-color: var(--green-color);
+  }
+
+  .header-menu {
+    display: block;
+  }
+
+  .show {
+    display: block;
+  }
+
+  /* search */
+  .search-input {
+    width: 60%;
+  }
+}
+
+/*Kích thước cho Smart phone lớn(480 x 640)*/
+@media screen and (min-width: 320px) {
+}
+
+/*Kích thước cho Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px) {
+}
+
+/*Kích thước cho Tablet lớn(768 x 1024)*/
+@media screen and (min-width: 768px) {
+  /* Search css */
+  .search-input {
+    width: 50%;
+  }
+}
+
+/*Kích thước cho Laptop nhỏ(1024 x 768)*/
+@media screen and (min-width: 1024px) {
+  html,
+  body {
+    font-size: 62.5%;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-small {
+    position: relative;
+    display: flex;
+    top: 0;
+    border-top: none;
+    clip-path: none;
+  }
+
+  .header-small .header-link {
+    font-size: 1.8rem;
+    padding: 12px 16px;
+    margin-top: 10px;
+    background-color: var(--light-color);
+    margin-top: 0;
+    background-color: var(--white-color);
+    color: var(--text-color);
+  }
+
+  .header-link.active,
+  .header-link:hover {
+    color: var(--white-color);
+    background-color: var(--green-color);
+  }
+
+  /* Search css */
+  .search-input {
+    width: 35%;
+  }
+}
+
+/*Kích thước cho Laptop lớn(1280 x 1024)*/
+@media screen and (min-width: 1280px) {
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 90%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery-wrapper {
+  position: relative;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  position: absolute;
+  border: none;
+  opacity: 0.5;
+  z-index: 10;
+  border-radius: 5px;
+  width: 100px;
+}
+
+button:hover {
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+
+button img {
+  width: 50px;
+  height: 50px;
+}
+
+.arrow-left {
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+}
+
+.arrow-right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 30px;
+  padding: 24px;
+  /* scroll-snap-type: x mandatory; OBS: how to center a div at a container with css */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  /* border-radius: 16px; */
+  opacity: 0.4;
+}
+
+.current-item {
+  /* scroll-snap-align: center; OBS: how to center a div at a container with css  */
+  opacity: 1;
+}
+
+.item img {
+  border-radius: 16px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding-inline: 40px;
+  padding-top: 26px;
+}
+
+.headline h2 {
+  margin-bottom: 8px;
+}
+.time{
+  width: 800px;
+  height: 400px;
+}

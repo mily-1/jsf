@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+:root {
+  --green-color: #27ae60;
+  --blue-color: #192a56;
+  --light-color: #eeeeee;
+  --text-color: #111111;
+  --white-color: #ffffff;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --color-overflow: rgba(0, 0, 0, 0.8);
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.app {
+  margin: 0 auto;
+}
+
+/* Header css */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+}
+
+.header-box {
+  max-width: 1280px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 2.4rem;
+  color: var(--blue-color);
+  font-weight: 700;
+  display: flex;
+  gap: 0 5px;
+  cursor: pointer;
+}
+
+.header-logo i {
+  color: var(--green-color);
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 8px;
+}
+
+.header-link {
+  border-radius: 4px;
+  transition: all 0.2s linear;
+  display: block;
+}
+
+.header-other i {
+  font-size: 1.6rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--light-color);
+  color: var(--blue-color);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.header-other i:hover {
+  transform: rotate(360deg);
+  color: var(--white-color);
+  background-color: var(--green-color);
+}
+
+/* End header css */
+
+/* Search css */
+.search-form {
+  position: fixed;
+  top: -110%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-overflow);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: all 0.2s linear;
+}
+
+.search-form.active {
+  top: 0;
+}
+
+.search-input {
+  height: 40px;
+  outline: none;
+  background-color: transparent;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: var(--white-color);
+  font-size: 2.4rem;
+  color: var(--white-color);
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.search-input::placeholder {
+  color: var(--white-color);
+}
+
+.search-form i {
+  color: var(--white-color);
+  font-size: 2.6rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.search-form i:hover {
+  color: var(--green-color);
+}
+
+.search-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+/* End search css */

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+</head>
+<body>
+    <div class="header-box">
+        <div class="header-logo">
+            <i class="fas fa-utensils"></i>
+            Japan Food.
+        </div>
+
+        <ul class="header-list header-small">
+            <li class="header-item"><a href="#!" class="header-link active">Home</a></li>
+            <li class="header-item"><a href="#!" class="header-link">Menu</a></li>
+            <li class="header-item"><a href="#!" class="header-link">Shop</a></li>
+            <li class="header-item"><a href="#!" class="header-link">Perfil</a></li>
+            <li class="header-item"><a href="login.html" class="header-link">Sing-in/Sing-up</a></li>
+            <li class="header-item"><a href="#!" class="header-link">Log Out</a></li>
+        </ul>
+        <ul class="header-list">
+            <li class="header-other header-menu">
+                <i class="fas fa-list menu-bars"></i>
+            </li>
+            <li class="header-other icon-search">
+                <i class="fas fa-search"></i>
+            </li>
+            <li class="header-other">
+                <i class="fas fa-heart"></i>
+            </li>
+            <li class="header-other">
+                <i class="fas fa-shopping-cart"></i>
+            </li>
+        </ul>
+    </div>
+    <form class="search-form">
+        <input type="text" id="search" placeholder="Search here..." autocomplete="off" class="search-input">
+        <label for="search"><i class="fas fa-search"></i></label>
+        <i class="fas fa-times search-close"></i>
+    </form>
+    <div>
+        <main>
+            <div class="container">
+              <div class="title">
+                <h1 style="font-size: 30px;">Tipos de comida</h1>
+              </div>
+      
+              <div class="gallery-wrapper">
+                <button class="arrow-left control" id="control">
+                  <p style=" font-size: 30px;"><</p>
+                </button>
+      
+                <button class="arrow-right control">
+                  <p style=" font-size: 30px;">></p>
+                </button>
+      
+                <div class="gallery">
+                  <div class="item current-item">
+                  </div>
+                  <div class="item">
+                    <img class="time" src="https://mlbeacsiwa9k.i.optimole.com/cb:iANQ~34e3e/w:1920/h:829/q:mauto/rt:fill/g:ce/ig:avif/f:best/https://www.mizkanchef.com/wp-content/uploads/2020/12/tokyobanbao-recipe.jpg" alt="imagem aleatória" />
+                  </div>
+                  <div class="item">
+                    <img class="time"  src="https://s2-oglobo.glbimg.com/WJbkQ3azBgWArXdztVpRcL_EB10=/0x0:6067x3467/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/2/S/yPBPRRQnuuh6CqxHEBVQ/prato-de-frutos-do-mar-frescos-com-sashimi-de-sushi-e-wasabi-gerado-por-ia.jpg" alt="imagem aleatória" />
+                  </div>
+                  <div class="item">
+                  </div>
+                  <div class="item">
+                    <img class="time" src="https://imagens.jotaja.com/produtos/3367/FA3550DF6AC6A27D12A7AE460111D18494EB4BE5E7F7968253928E1027F1AD02.jpeg" alt="imagem aleatória" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+    </div>
+    
+</body>
+<footer style="background-color: rgb(45, 211, 111);">
+    <br><br><br>
+    <p style="font-size: 10px; text-align: center;">2024-Todos os direitos reservados ao autor</p>
+    <br><br><br>        
+</footer>
+<script src="assets/js/main.js"> </script>
+<script>
+    const main =  new Main()
+    main.menuToggle()
+    main.clickSearch()
+</script>
+
+</html>
